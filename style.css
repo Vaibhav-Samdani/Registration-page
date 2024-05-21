@@ -31,7 +31,8 @@ body {
 
 .form {
   width: 445px;
-  height: 75vh;
+  height: fit-content;
+  min-height: 493px;
   background: rgba(255, 255, 255, 0.171);
   backdrop-filter: blur(5px);
   /* border-image: linear-gradient(to right, #116399, #38caef); */
@@ -43,13 +44,13 @@ body {
   display: flex;
   align-items: center;
   flex-direction: row;
-  /* overflow-x: hidden; */
 }
 
 .page {
   background-color: transparent;
   width: 445px;
-  height: 75vh;
+  height: fit-content;
+  min-height: 507px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -145,6 +146,10 @@ body {
   box-shadow: none;
 }
 
+.nameBox{
+  margin-top: 20px;
+}
+
 .emailBox,
 .mobileBox {
   margin-top: 35px;
@@ -168,6 +173,7 @@ body {
   position: relative;
   top: 17.5%;
   left: -23.5%;
+  margin-top: 45px;
 }
 
 #nextButton span {
@@ -279,7 +285,7 @@ body {
 
 .sectionBox,
 .branchBox {
-  margin-top: 35px;
+  margin-top: 4vh;
 }
 
 /* drop down domain */
@@ -287,15 +293,15 @@ body {
 .dropdown {
   min-width: 21.7em;
   position: relative;
-  margin: 1em;
+  /* margin: 1em; */
 }
 
 .dropdown1 {
-  margin-top: 5em;
+  margin-top: 7vh;
 }
 
 .dropdown2 {
-  margin-top: 2em;
+  margin-top: 5vh;
 }
 
 .dropdown * {
@@ -395,6 +401,7 @@ body {
   top: 6%;
   left: -23.5%;
   transition: all 0.3s ease-in-out;
+  margin-top: 6.5vh;
 }
 
 #submitButton span {
@@ -422,6 +429,8 @@ body {
 @media only screen and (max-width: 426px) {
   .form {
     width: 80%;
+    min-height: 507px;
+    
   }
 
   .page1 h1 {
@@ -442,7 +451,7 @@ body {
   }
   .page2 {
     left: -41px !important;
-    top: -5%;
+    top: 0%;
   }
 
   .form__group2 {
