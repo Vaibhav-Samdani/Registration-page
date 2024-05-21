@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form">
+        <div class="page1 page">
+        <h1>Registration Desk</h1>
+        <div class="nameBox form__group field">
+            <input type="input" class="form__field" placeholder="Name" required="">
+            <label for="name" class="form__label">Name</label>
+        </div>
+        <div class="emailBox form__group field">
+          <input type="email" class="form__field" placeholder="Email ID" required="">
+          <label for="emailId" class="form__label">Email ID</label>
+      </div>
+      <div class="mobileBox form__group field">
+        <input type="tel" class="form__field" placeholder="Mobile No." required="">
+        <label for="mobileNo" class="form__label">Mobile No.</label>
+    </div>
+
+    <button id="nextButton">
+      <div class="svg-wrapper-1">
+        <div class="svg-wrapper">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            id="nextSvg1"
+          >
+            <path fill="none" d="M0 0h24v24H0z"></path>
+            <!-- <path
+              fill="currentColor"
+              d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+            ></path> -->
+            <svg xmlns="http://www.w3.org/2000/svg" id="nextSvg2" width="24" height="24"><path fill="currentColor" d="M7 7h8.586L5.293 17.293l1.414 1.414L17 8.414V17h2V5H7v2z"/></svg>
+          </svg>
+        </div>
+      </div>
+      <span>Next</span>
+    </button>
+
+      </div>
+
+
+      <div class="page2 page">
+        
+
+        <div class="sectionBox form__group2 field2">
+          <input type="input" class="form__field2" placeholder="Section" required="">
+          <label for="section" class="form__label2">Section</label>
+        </div>
+
+        <div class="branchBox form__group2 field2">
+          <input type="input" class="form__field2" placeholder="Branch" required="">
+          <label for="branch" class="form__label2">Branch</label>
+        </div>
+
+        <!-- <div class="domainBox form__group2 field2">
+          <input type="dropdown" class="form__field2" placeholder="Domain" required="">
+          <label for="domain" class="form__label2">Domain</label>
+        </div> -->
+        
+
+        <div class="dropdown dropdown1">
+          <div class="select">
+            <span class="selected">Year</span>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li id="First Year">First Year</li>
+            <li id="Second Year">Second Year</li>
+          </ul>
+        </div>
+
+        <div class="dropdown dropdown2">
+          <div class="select">
+            <span class="selected">Domain</span>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li id="Hardware">Hardware</li>
+            <li id="Software">Software</li>
+            <li id="3D printing">3D printing</li>
+            <li id="Media and Creation">Media and Creation</li>
+          </ul>
+        </div>
+
+        <button id="submitButton">
+          <span id="submitSpan">Submit</span>
+        </button>
+
+      </div>
+    </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
